@@ -54,11 +54,11 @@ public class Group {
 	// Comparator
 	public Group sortStudentsByAgeWithTeacher() {
 		StudentCompare stcomp = new StudentCompare();
-		
+
 		int q = 0;
 		for (int i = students.length - 1; i >= 0; i--) {
 			for (int j = 0; j < i; j++) {
-				if (q < stcomp.compare(students[j], students[j+1])) {
+				if (q < stcomp.compare(students[j], students[j + 1])) {
 					Student buff = students[j];
 					students[j] = students[j + 1];
 					students[j + 1] = buff;
@@ -67,22 +67,22 @@ public class Group {
 		}
 		return null;
 	}
-	
+
 	// Comparator
-		public Group sortStudentsByNameAge() {
-			StudentCompareNameAge stcomp = new StudentCompareNameAge();
-			
-			int q = 0;
-			for (int i = students.length - 1; i >= 0; i--) {
-				for (int j = 0; j < i; j++) {
-					if (q < stcomp.compare(students[j], students[j+1])) {
-						Student buff = students[j];
-						students[j] = students[j + 1];
-						students[j + 1] = buff;
-					}
+	public Group sortStudentsByNameAge() {
+		StudentCompareNameAge stcomp = new StudentCompareNameAge();
+
+		int q = 0;
+		for (int i = students.length - 1; i >= 0; i--) {
+			for (int j = 0; j < i; j++) {
+				if (q < stcomp.compare(students[j], students[j + 1])) {
+					Student buff = students[j];
+					students[j] = students[j + 1];
+					students[j + 1] = buff;
 				}
 			}
-			return null;
 		}
+		return null;
+	}
 
 }

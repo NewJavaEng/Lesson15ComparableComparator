@@ -26,7 +26,7 @@ public class Main {
 			System.out.println("Student age " + st.getAge());
 
 		}
-		
+
 		System.out.println("");
 
 		group.sortStudentsByAgeWithTeacher();
@@ -34,7 +34,7 @@ public class Main {
 		for (Student studik : group.getStudents()) {
 			System.out.println("Student sorted by age (with teacher) " + studik.getName() + " " + studik.getAge());
 		}
-		
+
 		System.out.println("");
 
 		group.sortStudentsByNameAge();
