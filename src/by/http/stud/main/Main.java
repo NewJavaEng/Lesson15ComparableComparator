@@ -8,7 +8,7 @@ public class Main {
 	public static void main(String[] args) {
 		Student student1 = new Student("Jack", 18);
 		Student student2 = new Student("Phill", 20);
-		Student student3 = new Student("Milla", 18);
+		Student student3 = new Student("Milla", 28);
 		Student student4 = new Student("Milla", 19);
 		Student student5 = new Student("Rutta", 17);
 
@@ -20,8 +20,10 @@ public class Main {
 		group.addStudent(student4);
 		group.addStudent(student5);
 
+		//Comparable interface
 		group.sortStudentsByAge();
 
+		System.out.println("Sorting students by age:");
 		for (Student st : group.getStudents()) {
 			System.out.println("Student age " + st.getAge());
 
@@ -29,6 +31,7 @@ public class Main {
 
 		System.out.println("");
 
+		//Comparator interface
 		group.sortStudentsByAgeWithTeacher();
 
 		for (Student studik : group.getStudents()) {
@@ -37,6 +40,7 @@ public class Main {
 
 		System.out.println("");
 
+		//Comparator interface
 		group.sortStudentsByNameAge();
 
 		for (Student studichek : group.getStudents()) {

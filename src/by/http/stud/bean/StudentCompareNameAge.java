@@ -12,7 +12,8 @@ public class StudentCompareNameAge implements Comparator<Student> {
 		if (st11.compareTo(st22) > 0) {
 			return 1;
 		} else if (st11.compareTo(st22) == 0) {
-			return 1;
+
+			return stu1.getAge() - stu2.getAge();
 		} else {
 			return 0;
 		}
